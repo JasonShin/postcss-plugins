@@ -15,12 +15,15 @@
     "add-new-plugin": "node scripts/addNewPlugin.js",
     "update-authors": "node scripts/updateAuthors.js",
     "update-stars": "node scripts/updateStars.js && node scripts/updateAuthors.js",
-    "test": "mocha test"
+    "test": "mocha test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "chalk": "^1.1.1",
     "inquirer": "^1.2.3",
-    "octonode": "^0.7.8"
+    "octonode": "^0.7.8",
+    "snyk": "^1.317.0"
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
@@ -44,5 +47,6 @@
     "url": "https://github.com/himynameisdave/postcss-plugins/issues"
   },
   "author": "himynameisdave",
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
