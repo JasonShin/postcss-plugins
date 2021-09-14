@@ -18,8 +18,8 @@
     "test": "mocha test"
   },
   "dependencies": {
-    "chalk": "^1.1.1",
-    "inquirer": "^1.2.3",
+    "chalk": "^2.0.0",
+    "inquirer": "^3.2.0",
     "octonode": "^0.7.8"
   },
   "devDependencies": {
